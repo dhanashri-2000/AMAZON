@@ -49,8 +49,23 @@ Include dimensions, weight, and compatibility details if applicable.
 "Upgrade your home gym with this versatile equipment!"
 
 ## Tech Stack
+- Node.js
+- Express.js
+- dotenv
+- mongoose
+- nodemon
 
-## API
+## API Endpoints
+
+Users
+- /api/v1/user/create
+- /api/v1/user/getall
+- /api/v1/user/get/:id
+- /api/v1/user/delete/:id
+- /api/v1/user/update/:id
+
+
+## Security consideration
 
 
 
