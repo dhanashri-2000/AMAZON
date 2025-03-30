@@ -1,21 +1,14 @@
 import express from "express";
+import { createuser, deleteuser, getallusers, getuser, updateuser, logoutuser }
+    from "../controllers/users.controller.js";
 
 const router = express.Router();
 
-router.get("/create", (req, res) => {
-    // business logic of creating a user account
-});
+router.get("/create", createuser);
+router.get("/getall", getallusers);
+router.get("/get/:id", getuser);
+router.delete("/delete/:id", deleteuser);
+router.push("/update/:id", updateuser);
+router.get("/logout", logoutuser);
 
-router.get("/getall", (req, res) => {
-    // business logic of getall a user account
-});
-
-router.get("/get/:id", (req, res) => {
-    // business logic of getting a single user
-});
-router.get("/delete/:id", (req, res) => {
-    // business logic of deleting a user 
-});
-router.get("/uodate/:id", (req, res) => {
-    // business logic of updating a user 
-});
+export default router;
