@@ -57,7 +57,7 @@ Include dimensions, weight, and compatibility details if applicable.
 
 ## API Endpoints
 
-[6:40 PM, 3/30/2025] Dhanashri Dhadse🥰😍😘: Users
+Users
 - /api/v1/user/create
 - /api/v1/user/getall
 - /api/v1/user/get/:id
